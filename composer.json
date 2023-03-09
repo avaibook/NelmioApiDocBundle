@@ -14,13 +14,26 @@
             "homepage": "https://github.com/nelmio/NelmioApiDocBundle/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "zircote/swagger-php",
+                "version": "2",
+                "dist": {
+                    "url": "https://github.com/avaibook/swagger-php/archive/refs/heads/2.x.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
     "require": {
         "php": ">=8.0",
         "symfony/framework-bundle": "^3.4|^4.0|^5.0",
         "symfony/options-resolver": "^3.4.4|^4.0|^5.0",
         "symfony/property-info": "^3.4|^4.0|^5.0",
         "exsyst/swagger": "^0.4.1",
-        "avaibook/swagger-php": "^2.0.9",
+        "zircote/swagger-php": "2",
         "phpdocumentor/reflection-docblock": "^3.1|^4.0|^5.0"
     },
     "require-dev": {
